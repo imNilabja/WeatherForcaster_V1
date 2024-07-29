@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -44,20 +45,23 @@ function App() {
       <Navbar />
 
       <div className='w-[100vw] flex justify-center min-h-[200px] items-center'>
-        <input onChange={changeHandler} type="text" name='place' className='border border-black px-2 py-1 w-[300px] rounded-lg' />
+        <input onChange={changeHandler} type="text" name='place' className='border border-black w-[250px] px-2 py-1 md:w-[300px] rounded-lg' />
         <button className='bg-violet-300 px-3 py-1 rounded-xl mx-2' onClick={api}>submit</button>
       </div>
-      <div className=' w-[100vw] min-h-[200px] flex justify-center gap-4 items-center text-white font-bold'>
+      <div className='mx-auto w-fit min-h-[200px] flex-col justify-center gap-4 items-center text-xl text-white font-bold md:block gap-y-3'>
+        
+          <p className='my-2'>Location: {location}</p>
+          <p className='my-2'>humidity: {humidity}</p>
+          <p className='my-2'>Current temperature: {temp}</p>
+          <p className='my-2'>Max temperature: {Maxtemp}</p>
+          <p className='my-2'>Min temperature: {Mintemp}</p>
+          <p className='my-2'>Wind Speed: {wspeed}</p>
 
-        <p>Location: {location}</p>
-        <p>humidity: {humidity}</p>
-        <p>Current temperature: {temp}</p>
-        <p>Max temperature: {Maxtemp}</p>
-        <p>Min temperature: {Mintemp}</p>
-        <p>Wind Speed: {wspeed}</p>
+
+
 
       </div>
-
+      <Footer />
     </>
   )
 }

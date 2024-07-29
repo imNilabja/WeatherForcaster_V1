@@ -2,5 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 body{
-    background-color: rgb(43, 43, 94);
+    background-image: url(/public/wallhaven-e7ek7k_1920x1080.png);
+    background-size: cover; 
+    
+ 
+background-position: bottom;
+
+   
+ 
 }
