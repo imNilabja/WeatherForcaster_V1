@@ -48,7 +48,7 @@ function App() {
         <input onChange={changeHandler} type="text" name='place' className='border border-black w-[250px] px-2 py-1 md:w-[300px] rounded-lg' />
         <button className='bg-violet-300 px-3 py-1 rounded-xl mx-2' onClick={api}>submit</button>
       </div>
-      <div className='mx-auto w-fit min-h-[200px] flex-col justify-center gap-4 items-center text-xl text-white font-bold md:block gap-y-3'>
+      <div className='mx-auto my-20 w-fit min-h-[200px] flex-col justify-center gap-4 items-center text-xl text-white font-bold md:block gap-y-3'>
         
           <p className='my-2'>Location: {location}</p>
           <p className='my-2'>humidity: {humidity}</p>
