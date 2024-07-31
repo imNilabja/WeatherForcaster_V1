@@ -81,8 +81,8 @@ function App() {
     <p className='my-2'>Location: {location}</p>
     <p className='my-2'>humidity: {humidity}</p>
     <p className='my-2'>Current temperature: {temp}</p>
-    <p className='my-2'>Max temperature: {Maxtemp}</p>
-    <p className='my-2'>Min temperature: {Mintemp}</p>
+    <p className='my-2'>Max temperature: {Maxtemp}°C</p>
+    <p className='my-2'>Min temperature: {Mintemp}°C</p>
     <p className='my-2'>Wind Speed: {wspeed}</p>
     <p className='my-2'>Condition: {conditions}</p>
 
