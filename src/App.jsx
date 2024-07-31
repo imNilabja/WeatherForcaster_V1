@@ -47,15 +47,15 @@ function App() {
   
   const changeBg=() => {
     if(conditions.includes("Rain")){
-      ref.current.src="/public/rainy.png"
+      ref.current.src="/rainy.png"
     }else if( conditions.includes("Partially cloudy")){
- ref.current.src="/public/cloudy.png"
+ ref.current.src="/cloudy.png"
     }
     if(conditions.includes("Clear")){
-      ref.current.src="/public/sunny.png"
+      ref.current.src="/sunny.png"
     }
     if(conditions.includes("Snow")){
-      ref.current.src="/public/snowy.png"
+      ref.current.src="/snowy.png"
     }
     // if(conditions.includes("cloudy")){
     //   ref.current.src="/public/cloudy.jpg"
@@ -68,7 +68,7 @@ function App() {
   return (
     <>
     <div className='main-box'   >
-      <img ref={ref} src="/public/sunny.png" alt="" className=' flex md:w-[100%] md:h-[100%] md:mt-0 h-[50%] absolute -z-10 mt-[200px] ' />
+      <img ref={ref} src="/sunny.png" alt="" className=' flex md:w-[100%] md:h-[100%] md:mt-0 h-[50%] absolute -z-10 mt-[200px] ' />
 
     <Navbar />
 
