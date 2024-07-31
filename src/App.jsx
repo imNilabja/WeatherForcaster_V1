@@ -68,7 +68,7 @@ function App() {
   return (
     <>
     <div className='main-box'   >
-      <img ref={ref} src="/sunny.png" alt="" className=' flex md:w-[100%] md:h-[100%] md:mt-0 h-[50%] absolute -z-10 mt-[200px] ' />
+      <img ref={ref} src="/sunny.png" alt="" className=' flex md:w-[100%] md:h-[100%] md:mt-0 h-[50%] absolute -z-10 mt-[230px] ' />
 
     <Navbar />
 
