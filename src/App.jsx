@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import { useState, useEffect,useRef } from 'react'
 import './App.css'
@@ -46,15 +47,15 @@ function App() {
   
   const changeBg=() => {
     if(conditions.includes("Rain")){
-      ref.current.src="/public/rainy.jpg"
+      ref.current.src="/public/rainy.png"
     }else if( conditions.includes("Partially cloudy")){
- ref.current.src="/public/cloudy.jpg"
+ ref.current.src="/public/cloudy.png"
     }
     if(conditions.includes("Clear")){
-      ref.current.src="/public/sunny.jpg"
+      ref.current.src="/public/sunny.png"
     }
     if(conditions.includes("Snow")){
-      ref.current.src="/public/snowy.jpg"
+      ref.current.src="/public/snowy.png"
     }
     // if(conditions.includes("cloudy")){
     //   ref.current.src="/public/cloudy.jpg"
