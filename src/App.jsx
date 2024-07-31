@@ -18,7 +18,9 @@ function App() {
 
   useEffect(() => {
     api();
+ 
   }, [])
+
 
  
   const ref = useRef()
@@ -61,6 +63,7 @@ function App() {
     //   ref.current.src="/public/cloudy.jpg"
     // }
   }
+  
 
   useEffect(() => {
     changeBg()
