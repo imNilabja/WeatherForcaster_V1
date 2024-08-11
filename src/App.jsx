@@ -136,7 +136,12 @@ function App() {
     changeBg()
   }, [conditions])
 
-  var audioSrc = `/songs/${mood}/${songs[0]}`;
+
+  let songNumber = Math.floor(Math.random() * songs.length) + 1;
+
+
+
+  var audioSrc = `/songs/${mood}/${songs[songNumber]}`;
   console.log(audioSrc);
 
 
@@ -162,18 +167,23 @@ function App() {
           <p className='my-2'>Condition: {conditions}</p>
 
         </div>
-        <div className="mt-10 w-full bg-orange-500 flex flex-col items-center justify-center h-fit">
+        <div className="mt-16 w-full flex flex-col items-center justify-center h-fit">
           <div className='text-white font-extrabold'>SONGS FOR YOU</div>
           {/* {
-            songs.map((item,index)=>(
-              <div key={index} className="relative bg-red-600 w-[60%] min-h-[100px] max-h-fit flex flex-col items-center justify-evenly">
-              <audio controls src={item}></audio>
-            </div>
+            songs.map((item, index) => (
+
+              <div key={index} className="relative w-[60%] min-h-[100px] max-h-fit flex items-center justify-evenly mx-auto">
+                <audio controls src={`/songs/${mood}/${item}`} className="w-1/3  rounded-lg p-2 h-10"></audio>
+                <span className='text-white font-bold'>{item}</span>
+              </div>
             ))
           } */}
-        <div  className="relative bg-red-600 w-[60%] min-h-[100px] max-h-fit flex flex-col items-center justify-evenly mx-auto">
-              <audio controls src={audioSrc}></audio>
-            </div>
+
+          {/* random song play */}
+          <div className="relative w-[60%] min-h-[100px] max-h-fit flex items-center justify-evenly mx-auto">
+            <audio controls src={audioSrc} className="w-1/3 bg-green-400 rounded-lg p-1 h-10"></audio>
+            <span className='text-white font-bold'>{songs[songNumber]}</span>
+          </div>
         </div>
 
 
